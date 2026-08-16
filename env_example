@@ -1,0 +1,29 @@
+# MARE environment configuration
+# Copy this file to .env.local for local development.
+# Never commit real secrets to git.
+
+# -----------------------------------------------------------------------------
+# Database — required for migrations, seeded examples, and database-backed APIs
+# Neon pooled connection string is recommended.
+# -----------------------------------------------------------------------------
+DATABASE_URL=
+
+# -----------------------------------------------------------------------------
+# Authentication and security
+# Required in production. Generate a random secret of at least 32 characters.
+# -----------------------------------------------------------------------------
+JWT_SECRET=
+
+# -----------------------------------------------------------------------------
+# AI Chat — required for /aichat
+# -----------------------------------------------------------------------------
+OPENROUTER_API_KEY=
+OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
+
+# -----------------------------------------------------------------------------
+# Cloudinary — required for image uploads on /form
+# -----------------------------------------------------------------------------
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+

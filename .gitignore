@@ -1,0 +1,266 @@
+# ============================================
+# NEXT.JS SPECIFIC
+# ============================================
+
+# Next.js build output
+.next/
+out/
+build/
+dist/
+
+# Next.js static files
+!.next/static
+
+# ============================================
+# DEPENDENCIES
+# ============================================
+
+# Node.js
+node_modules/
+package-lock.json
+yarn.lock
+# NOTE: pnpm-lock.yaml MUST be committed for CI (`pnpm install --frozen-lockfile`
+# and `actions/setup-node` caching both require the lockfile in the checkout).
+bun.lockb
+
+# ============================================
+# ENVIRONMENT VARIABLES
+# ============================================
+
+# Environment files (CRITICAL - NEVER COMMIT!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# Environment files with secrets
+.env.secrets
+*.env.secrets
+
+# ============================================
+# RUNTIME / LOCAL DATA
+# ============================================
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Next.js debug logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local database
+*.db
+*.sqlite
+*.sqlite3
+
+# Local data directory
+/data/
+
+# ============================================
+# IDE / EDITOR FILES
+# ============================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+.history/
+*.vsix
+
+# JetBrains IDEs (WebStorm, IntelliJ)
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+.idea/dictionaries/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+*.un~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# ============================================
+# OS FILES
+# ============================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+.directory
+*.tmp
+
+# ============================================
+# TESTING / COVERAGE
+# ============================================
+
+# Coverage directories
+coverage/
+.nyc_output/
+*.lcov
+
+# Test reports
+test-results/
+test-reports/
+jest-report.xml
+
+# Testing artifacts
+.terraform/
+*.test.sqlite
+*.test.db
+
+# ============================================
+# CI / DEPLOYMENT
+# ============================================
+
+# CI artifacts
+dist/
+.vercel/
+.vercelignore
+
+# Docker
+*.dockerignore
+!Dockerfile*
+
+# Cloud providers
+*.terraform
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# ============================================
+# PERFORMANCE / PROFILING
+# ============================================
+
+# CPU / memory profiling
+*.cpuprofile
+*.heapsnapshot
+*.heapdump
+
+# ============================================
+# MISC / UTILITY
+# ============================================
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Generated files
+*.generated.*
+*.gen.*
+!*.d.ts
+
+# ============================================
+# SENSITIVE FILES (ADDITIONAL SAFETY)
+# ============================================
+
+# Key files
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.p8
+*.p7b
+*.p7c
+*.spc
+*.ssp
+
+# Token files
+*.token
+*.secret
+*.secrets
+secrets/
+secrets.yml
+secrets.yaml
+auth.json
+credentials.json
+service-account.json
+*.service-account.json
+*.service-account.key.json
+
+# ============================================
+# DATABASE & CACHE
+# ============================================
+
+# Prisma
+prisma/*.db
+prisma/*.db-journal
+prisma/*.sqlite
+prisma/*.sqlite3
+
+# SQLite
+*.db-journal
+*.sqlite-journal
+
+# Redis
+dump.rdb
+
+# ============================================
+# NEXT.JS BUILD OPTIMIZATION
+# ============================================
+
+# Optional: Uncomment if using these
+# .env.production  # Uncomment if you want to keep production env in repo (not recommended)
+# .env.development # Same as above
+
+# ============================================
+# MEMORY / PERFORMANCE
+# ============================================
+
+# Heap memory
+*.heapsnapshot
+*.heapdump
+*.cpuprofile
+
+# ============================================
+# DEPRECATED / LEGACY (Optional)
+# ============================================
+
+# bower (if you're still using it)
+bower_components/
+
+# vendor (PHP-style)
+vendor/
+
+# ============================================
+# END OF FILE
+# ============================================
